@@ -9,7 +9,7 @@ export class testConsumer implements OnModuleInit {
       topic: { topic: 'test' },
       config: { groupId: 'adlas-challenge' },
       onMessage: async (message) => {
-        console.log(message.value.toString());
+         console.log(message.value.toString());
       },
     });
   }

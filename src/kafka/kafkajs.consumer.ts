@@ -19,7 +19,7 @@ export class KafkajsConsumer implements IConsumer {
   ) {
     this.kafka = new Kafka({ brokers: [broker] });
     this.consumer = this.kafka.consumer(config);
-    this.logger = new Logger(`${topic.topic}-${config.groupId}`);
+     this.logger = new Logger(`${topic.topic}-${config.groupId}`);
   }
 
   async connect() {
